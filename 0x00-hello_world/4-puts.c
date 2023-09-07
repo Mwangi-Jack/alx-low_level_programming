@@ -1,4 +1,4 @@
-#include <stdio.h>;
+#include <stdio.h>
 /**
 * main -Entry point
 * Description: 'Prints put a string using puts'
