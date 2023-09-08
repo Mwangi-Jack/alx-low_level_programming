@@ -1,5 +1,6 @@
 /* more headers goes there */
 #include <stdio.h>
+#include <stdlib.h>
 /**
 * main- Entry point
 * Description: Print wherether a number is positive or negative *
