@@ -12,7 +12,7 @@ int _isLower(int c)
 {
 char i;
 
-for (i = "a"; i < "z"; i++)
+for (i = 'a'; i < 'z'; i++)
 {
 if (i == c)
 {

@@ -14,10 +14,10 @@ char j;
 while (i < 10)
 {
 /* code */
-for (j = "a"; j < "z"; j++)
+for (j = 'a'; j < 'a'; j++)
 {
 putchar(j);
 }
-putchar("\n");
+putchar('\n');
 }
 }
