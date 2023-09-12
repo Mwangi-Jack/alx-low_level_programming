@@ -9,11 +9,21 @@
  */
 int _putchar(char c);
 
+
+/**
+ * print_alphabet -prints alphabets
+ *
+ * Return: either 1 or 0
+ */
+void print_alphabet(void);
+
+
 /**
  * print_alphabet_x10 - prints the alphabet 10 times
  *
  * Return: Always 0 (success)
  */
+
 void print_alphabet_x10(void);
 
 /**
