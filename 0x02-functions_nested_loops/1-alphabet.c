@@ -1,19 +1,20 @@
 #include <stdio.h>
 
 /**
- * print_alphabet - function
- * Description: This program prints _putchar to the console
- * Return: Always Success (0)
+ * print_alphabet - Function
  *
+ * Description: This function prints alphabets
+ *
+ * Rerturn: Returns void
 */
 
 void print_alphabet(void)
 {
 char a;
-for (a = "a"; a < "z"; a++)
+
+for (a = 'a'; a <= 'z'; a++)
 {
 putchar(a);
 }
-putchar("\n");
-
+putchar('\n');
 }
