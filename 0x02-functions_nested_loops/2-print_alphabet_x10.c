@@ -8,15 +8,15 @@
 
 void print_alphabet_x10(void)
 {
-int i = 10;
-char j;
+char a;
+int  i;
 
-while (i < 10)
+
+for (i = 0; i < 10; i++)
 {
-/* code */
-for (j = 'a'; j < 'a'; j++)
+for (a = 'a'; a <= 'z'; a++)
 {
-putchar(j);
+putchar(a);
 }
 putchar('\n');
 }
