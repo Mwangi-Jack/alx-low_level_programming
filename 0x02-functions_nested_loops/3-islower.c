@@ -1,12 +1,14 @@
 #include <stdio.h>
+#include "main.h"
+
 /**
- * _islower- Function
+ * _islower -Entry Point
  *
- * Description: This function checks for lowercase characters
+ * Description: This func prints alphabets in lowercase
  *
- * @c: parameter to check
- * Return: Returns (1) if lowercase and (0) otherwise
-*/
+ *@c: parameter to check
+ * Return: Always 0 (Success)
+ */
 
 int _islower(int c)
 {
