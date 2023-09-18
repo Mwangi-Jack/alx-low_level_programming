@@ -48,4 +48,13 @@ int _strlen(char *s);
 
 void _puts(char *str);
 
+
+/**
+ * print_rev - prints reversed string, followed by a new line
+ * @s: pointer to the string to print
+ * Return: void
+*/
+
+void print_rev(char *s);
+
 #endif
