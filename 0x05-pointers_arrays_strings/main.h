@@ -66,4 +66,13 @@ void print_rev(char *s);
 
 void rev_string(char *s);
 
+
+/**
+ * puts2 - prints a string, followed by a new line,
+ * @str: pointer to the string to print
+ * Return: void
+*/
+
+void puts2(char *str);
+
 #endif
