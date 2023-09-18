@@ -75,4 +75,50 @@ void rev_string(char *s);
 
 void puts2(char *str);
 
+
+/**
+ * puts_half - print second half of a string
+ * @str: char array string type
+ * Description: If odd number of chars, print (length - 1) / 2
+ */
+
+void puts_half(char *str);
+
+
+
+/**
+ * print_array - print `n` elements of an array of integers
+ * @a: int type array pointer
+ * @n: int type integer
+ * Description: Numbers must be separated by comma and space.
+ * Numbers should be displayed in the same order they are stored in array.
+ * You can only use _putchar to print.
+ */
+
+void print_array(int *a, int n);
+
+
+
+
+
+/**
+ * *_strcpy -  copies the string pointed to by src
+ * @dest: char type string
+ * @src: char type string
+ * Description: Copy the string pointed to by pointer `src` to
+ * the buffer pointed to by `dest`
+ * Return: Pointer to `dest`
+ */
+
+char *_strcpy(char *dest, char *src);
+
+
+/**
+ * _atoi - convert a string to an integer.
+ * @s: char type string
+ * Return: integer converted
+ */
+
+int _atoi(char *s);
+
 #endif
