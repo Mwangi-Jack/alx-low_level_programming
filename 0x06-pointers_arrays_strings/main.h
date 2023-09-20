@@ -77,4 +77,14 @@ char *string_toupper(char *s);
  */
 char *cap_string(char *s);
 
+
+/**
+ * leet - leet
+ * @s: string
+ *
+ * Return: char value
+ */
+
+char *leet(char *s);
+
 #endif
