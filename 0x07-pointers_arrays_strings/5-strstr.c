@@ -1,25 +1,33 @@
+#include "main.h"
+
 /**
- * _strpbrk - finds string
- * @s: string to find stuff
- * @accept: accepting arrays
- *
- * Return: returns new value
+ * _strstr - locates substring
+ * @haystack: string to locate
+ * @needle: substring to locate
+ * Return: returns string at starting sub or null
  */
 
-char *_strpbrk(char *s, char *accept)
+char *_strstr(char *haystack, char *needle)
 {
 	int i;
 	int j;
 
-	for (i = 0; s[i] != '\0'; i++)
+	if (needle[0] == '\0')
+		return (haystack);
+
+	for (i = 0; haystack[i] != '\0'; i++)
 	{
-		for (j = 0; accept[j] != '\0'; j++)
+		if (haystack[i] == needle[0])
 		{
-			if (s[i] == accept[j])
+			for (j = 0; needle[j] != '\0'; j++)
 			{
-				return (s + i);
+				if (haystack[i + j] != needle[j])
+					break;
 			}
+			if (needle[j] == '\0')
+				return (haystack + i);
 		}
+
 	}
-	return (0);
+	return ('\0');
 }
