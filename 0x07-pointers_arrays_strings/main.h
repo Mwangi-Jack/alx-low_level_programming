@@ -1,6 +1,16 @@
 #ifndef __MAIN_H__
 #define __MAIN_H__
 
+
+int _putchar(char c);
+
+/**
+ * set_string - sets string to something
+ * @s: string to set to
+ * @to: set to
+ */
+
+
 /**
  * _memset - function
  *
