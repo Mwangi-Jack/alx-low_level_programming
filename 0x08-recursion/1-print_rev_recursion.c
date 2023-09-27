@@ -17,8 +17,8 @@ void _print_rev_recursion(char *s)
 	if (*s)
 	{
 		len = strlen(s);
-		_putchar(s[len - n++]);
-		_print_rev_recursion(++s);
+		_putchar(s[len--]);
+		_print_rev_recursion(s);
 	} else
 	{
 		_putchar('\n');
