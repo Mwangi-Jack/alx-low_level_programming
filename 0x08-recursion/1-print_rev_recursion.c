@@ -12,7 +12,7 @@
 
 void _print_rev_recursion(char *s)
 {
-	int len, n = 1;
+	int len;
 
 	if (*s)
 	{
