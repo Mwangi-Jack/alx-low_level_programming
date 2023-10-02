@@ -1,16 +1,17 @@
 #include <stdio.h>
 
 /**
- * main - Entry Point
+ * main- Entry Point
  *
- * Description: program to print the number of arguments passed to it
+ * Description: print argument count
  *
- * @argv: array of commandline arguments (Argument Vecotor)
- * @argc: number of commandline arguments (Argument Count)
+ * @argc: argument count
+ * @argv:  argument vector
+ *
  * Return: Always Success (0)
 */
 
-int main(int argc, char __attribute__ ((unused)) *argv[])
+int main(int argc, char  __attribute__((unused)) *argv[])
 {
 	printf("%d\n", argc);
 	return (0);
