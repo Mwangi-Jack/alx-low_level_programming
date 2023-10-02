@@ -5,8 +5,8 @@
  *
  * Description: program to print the number of arguments passed to it
  *
- * @argv: hello world
- * @argc: hello world
+ * @argv: array of commandline arguments (Argument Vecotor)
+ * @argc: number of commandline arguments (Argument Count)
  * Return: Always Success (0)
 */
 
