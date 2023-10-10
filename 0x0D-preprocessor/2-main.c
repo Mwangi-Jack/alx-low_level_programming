@@ -1,11 +1,11 @@
 #include <stdio.h>
 /**
- * main - check the code for Holberton School students
+ * main - check the code for Holberton School students.
  *
  * Return: success.
-*/
+ */
 int main(void)
 {
-	print("%s\n", __FILE__);
-	return (0);
+printf("%s\n", __FILE__);
+return (0);
 }
