@@ -36,10 +36,7 @@ int _strlen(const char *s)
 
 list_t *add_node(list_t **head, const char *str)
 {
-	char *data;
 	struct list_s *newNode;
-
-	data = strdup(str);
 
 	 newNode = malloc(sizeof(struct list_s));
 
@@ -54,9 +51,9 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	}
 
-	newNode->str = data;
-	newNode->len = _strlen(data);
-	newNode->next = *head;
+	newNode->str = strdup(str);
+	newNode->len = _strlen(str);
+	newNode->next = *(head);
 	*head = newNode;
 
 	return (newNode);
