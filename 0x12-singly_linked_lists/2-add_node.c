@@ -2,6 +2,32 @@
 #include <stdlib.h>
 #include "lists.h"
 
+
+/**
+ * _strlen - Function
+ *
+ * Description: function to get the length of a string
+ *
+ * @s: string
+ *
+ * Return: returns the length
+*/
+
+int _strlen(char *s)
+{
+	int i = 0;
+
+	while (s[i] != '\0')
+		i++;
+
+	return (i);
+}
+
+
+
+
+
+
 /**
  * add_node - Function
  *
@@ -27,7 +53,7 @@ list_t *add_node(list_t **head, const char *str)
 	}
 
 	newNode->str = data;
-	newNode->len = strlen(data);
+	newNode->len = _strlen(data);
 	newNode->next = *head;
 	*head = newNode;
 
