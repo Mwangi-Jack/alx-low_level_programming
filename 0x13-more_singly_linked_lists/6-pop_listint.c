@@ -16,7 +16,7 @@ int pop_listint(listint_t **head)
 	struct listint_s *current;
 	int n;
 
-	if (head == NULL)
+	if (*head == NULL)
 		return (0);
 
 	current = (*head)->next;
