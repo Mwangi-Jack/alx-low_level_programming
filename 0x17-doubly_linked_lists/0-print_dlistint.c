@@ -1,5 +1,5 @@
 #include "lists.h"
-
+#include <stdio.h>
 /**
  * print_dlistint - Function
  *
@@ -13,12 +13,13 @@
 
 size_t print_dlistint(const dlistint_t *h)
 {
-	int count;
+	int count = 0;
 
-	while (h->next != NULL)
+	while (h != NULL)
 	{
+		printf("%d\n", h->n);
 		count += 1;
-		h = h->next
+		h = h->next;
 	}
 
 	return (count);
