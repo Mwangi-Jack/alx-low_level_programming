@@ -1,5 +1,5 @@
 #include "hash_tables.h"
-
+#include <stdio.h>
 
 /**
  * key_index - Function
