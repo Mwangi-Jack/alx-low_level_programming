@@ -13,19 +13,13 @@
  * @value: pointer to value
  *
  * Return: On Success (1). On Fail (0)
- *
- * Description : Now, there are certain steps involved in the ht_insert() function.
-	Create the item based on the { key: value } pair.
-	Compute the index based on the hash function.
-	Check if the index is already occupied or not, by comparing the key.
-	If it is not occupied, you can directly insert it into index.
-	Otherwise, it is a collision, and you will need to handle it.
 */
 
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	hash_node_t *element;
+	hash_node_t *element, *head;
+
 	unsigned long int index;
 
 	element = malloc(sizeof(hash_node_t));
@@ -39,30 +33,16 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	element->value = strdup(value);
 	element->next = NULL;
 
-	printf("Element Value: %s\n", element->value);
-	printf("Element Key: %s\n", element->key);
 	index = key_index((unsigned char *)key, 1024);
 
-	printf("Index:: %ld\n", index);
-
-
-	/**
-	 * ht->array[index] = element;
-	 * head = ht->array[index];
-	 */
-
-	if (!ht->array)
+	if (ht->array[index] == NULL)
 	{
 		ht->array[index] = element;
 
-		printf("Value from hash table %s\n", ht->array[index]->value);
-
 	} else
 	{
-		printf("TRUE\n");
+		head = ht->array[index];
+		element->next = head;
 	}
-
-	printf("hash table size %ld\n", ht->size);
-
 	return (1);
 }
