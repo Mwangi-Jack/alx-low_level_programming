@@ -41,8 +41,18 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	} else
 	{
+		int count = 0;
+
 		head = ht->array[index];
 		element->next = head;
+		printf("HELLO WORLD\n");
+
+		while (element->next)
+		{
+			printf("Element %d : %s :: %s\n", count, element->key, element->value);
+			count += 1;
+			element = element->next;
+		}
 	}
 	return (1);
 }
