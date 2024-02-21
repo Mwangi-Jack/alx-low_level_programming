@@ -1,0 +1,11 @@
+hey: one two
+	echo $@
+
+one:
+	touch one
+
+two:
+	touch two
+
+clean:
+	rm -f one two
