@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * main- Entry point
@@ -16,12 +17,12 @@ int main(void)
 	size_t len = 0;
 	ssize_t read;
 
-	printf("$ ");
 	while ((read = getline(&line, &len, stdin)) != -1)
 	{
+		line[strcspn(line, "\n")] = '\0';
 		printf("Read %lu characters:\n", (size_t)read);
 		printf("Line: %s", line);
-		printf("$ ");
+		printf("1: %c, 2: %c, 3: %c\n", line[0], line[1], line[2]);
 	}
 
 	free(line);
