@@ -6,10 +6,5 @@ OBJ = $(SRC:.c=.o)
 
 NAME = school
 
-all: $(NAME)
-	$(Name): $(OBJ)
-		$(CC) -o $@ $^
-
-%.o:%.c
-	$(CC) -c $< -o $@
-
+all:
+	$(CC) $(OBJ) -o $(NAME)
