@@ -9,6 +9,9 @@ def island_perimeter(grid):
             if j == 1:
                 one_count += 1
 
-    perimeter = (one_count * 2) + 2
+    if one_count <= 0:
+        perimeter = one_count
+    else:
+        perimeter = (one_count * 2) + 2
 
     return perimeter
