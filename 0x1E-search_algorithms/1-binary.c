@@ -18,13 +18,13 @@ int print_array(int *array, size_t start, size_t stop)
 {
 	size_t i = start;
 
-	printf("Searching in array:");
-	while (i <= stop)
+	printf("Searching in array: ");
+	while (i < stop)
 	{
-		printf(" %d",  array[i]);
+		printf("%d, ",  array[i]);
 		i += 1;
 	}
-	printf("\n");
+	printf("%d\n", array[stop]);
 
 	return (0);
 }
